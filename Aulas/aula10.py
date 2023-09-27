@@ -18,3 +18,9 @@ if (entrada == 'E' or entrada == 'e') and senhaDigitada == senhaPermitida :
 
 else:
     print('Sair')
+
+
+
+
+
+
