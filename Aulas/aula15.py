@@ -5,7 +5,7 @@ muitas condições no mesmo if ( Rim )
 """
 
 velocidade = 50 # velocidade atual do carro
-local_carro  = 102 #local em que o carro esta na estrada
+local_carro  = 103 #local em que o carro esta na estrada
 
 RADAR_1 = 60  #velocidade maxima do radar 1
 LOCAL_1 = 100  #Local aonde o radar 1 esta  
