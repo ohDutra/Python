@@ -5,6 +5,8 @@ while True:
 
 
    numeros_validos = None
+   primeiro_numero_float = 0
+   segundo_numero_float = 0
 
    try:
       primeiro_numero_float = float(primeiro_numero)
@@ -32,12 +34,23 @@ while True:
       print('Digite apenas um operador.')
       continue
 
+   if operador == '+':
+      print(primeiro_numero_float + segundo_numero_float)
+
+   elif operador == '-':
+      print(primeiro_numero_float - segundo_numero_float)
+
+   elif operador == '*':
+      print(primeiro_numero_float * segundo_numero_float)    
+
+   elif operador == '/':
+      print(primeiro_numero_float / segundo_numero_float)
  
 
+   pergunta_de_parada = input('Deseja sair? Digite [ S ]').lower
 
-
-   sair = input('Deseja sair? Digite [ S ]').lower
-
-   if sair is True:
+   if pergunta_de_parada == 's':
          break
-      
+   else:
+      continue
+  
