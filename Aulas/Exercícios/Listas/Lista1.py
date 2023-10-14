@@ -131,4 +131,71 @@ elif verificacao == 'h' or verificacao == 'H':
 else:
     print('Escolha uma das opções indicadas ')    
     
+
+13
+
+
+peso_de_peixes = float(input('Digite quantos kilos: ')) 
+
+
+limite_de_kilos_permitidos = 50
+multa_por_excesso = 0
+kilos_excedido = 0
+
+if peso_de_peixes > limite_de_kilos_permitidos:
+    
+    kilos_excedido = peso_de_peixes - 50
+    multa_por_excesso = kilos_excedido  * 4 
+
+print(f'Limite de kilos de peixe permitido {limite_de_kilos_permitidos:.1f} kg')
+print(f'kilos de peixe informados {peso_de_peixes} kg')
+print(f'Valor da multa por excesso R$ {multa_por_excesso:.2f}')
+print(f'Kilos de peixe excedido {kilos_excedido:.1f} kg')
+
+
+14
+
+horas_trabalhadas_mes = float(input('Digite quantas horas trabalha por mês: '))
+valor_ganho_por_hora = float(input('Digite quanto recebe por hora trabalhada: '))
+
+
+salario_bruto = (horas_trabalhadas_mes * valor_ganho_por_hora)
+
+desconto_inss = (8 * salario_bruto) / 100
+desconto_imposto_de_renda = (11 * salario_bruto) / 100
+desconto_sindicato = (5 * salario_bruto) / 100
+descontos = (24 * salario_bruto) / 100
+salario_liquido = (salario_bruto - descontos)
+
+
+print(f'+ Salario Bruto : R$ {salario_bruto}')
+print(f'- IR : R$ {desconto_imposto_de_renda}')
+print(f'- INSS : R$ {desconto_inss}')
+print(f'- Sindicato : R$ {desconto_sindicato}')
+print(f'- Descontos : R$ {descontos}')
+print(f'= Salario Liquido : R$ {salario_liquido}')
+
 """
+# 1 litro a cada 3 metros
+# lata com 18 litros
+# valor da lata 80 reais
+# 1 lata faz 54 metros
+
+
+metros_area = float(input('Digite a area a ser pintada: '))
+
+
+contador = 1
+
+while metros_area > 54:
+    metros_area = - 54
+    contador += 1
+
+print(contador)
+
+
+
+
+
+
+
