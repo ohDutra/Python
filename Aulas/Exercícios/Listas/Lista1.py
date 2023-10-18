@@ -175,23 +175,66 @@ print(f'- Sindicato : R$ {desconto_sindicato}')
 print(f'- Descontos : R$ {descontos}')
 print(f'= Salario Liquido : R$ {salario_liquido}')
 
+15
+
+primeiro_numero_digitado = int(input('Digite o primeiro numero: '))
+segundo_numero_digitado = int(input('Digite o segundo numero: '))
+
+if primeiro_numero_digitado > segundo_numero_digitado:
+    print(f'O numero {primeiro_numero_digitado} é maior que {segundo_numero_digitado}')
+
+elif primeiro_numero_digitado == segundo_numero_digitado:
+    print(f'O numero {primeiro_numero_digitado} e o numero {segundo_numero_digitado} são iguais')
+
+else:
+    print(f'O numero {segundo_numero_digitado} é maior que {primeiro_numero_digitado}')    
+
+
+16
+
+verificacao_de_numero = int(input('Digite um numero: '))
+
+if verificacao_de_numero > 0:
+    print(f'O numero {verificacao_de_numero} é positivo')
+
+else:
+    print(f'O numero {verificacao_de_numero} é negativo')    
+
+
+
+17
+
+letra_digitada = input('Digite F (Feminino) ou M (Masculino): ')
+
+
+if letra_digitada == 'f' or letra_digitada == 'F':
+    print('Feminino')
+
+
+elif letra_digitada == 'm' or letra_digitada == 'M':
+    print('Masculino')
+
+
+else:
+    print('Sexo invalido')
+
 """
-# 1 litro a cada 3 metros
-# lata com 18 litros
-# valor da lata 80 reais
-# 1 lata faz 54 metros
+
+letra_digitada = input('Digite uma letra: ')
+
+vogal = 'aeiou','AEIOU'
+
+consoante = ' B C D F G J K L M N P Q R S T V W X Y Z ', 'b c d f g j k l m n p q r s t v w x y z'
 
 
-metros_area = float(input('Digite a area a ser pintada: '))
+if letra_digitada in ...:
+    print(f'A letra {letra_digitada} é uma Vogal')
+
+else:
+    print(f'A letra {letra_digitada} é uma consoante')    
 
 
-contador = 1
 
-while metros_area > 54:
-    metros_area = - 54
-    contador += 1
-
-print(contador)
 
 
 
