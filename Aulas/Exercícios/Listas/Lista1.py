@@ -309,6 +309,8 @@ print(f'O menor numero é {menor_numero_digitado}')
 
 22
 
+
+
 primeiro_produto = float(input('Digite o preço do primeiro produto: '))
 segundo_produto = float(input('Digite o preço do segundo produto: '))
 terceiro_produto = float(input('Digite o preço do terceiro produto: '))
@@ -352,16 +354,6 @@ elif segundo_numero_digitado  > primeiro_numero_digitado and segundo_numero_digi
 else:
     primeiro_numero = terceiro_numero_digitado
 
-        #verificacao do segundo numero
-
-if primeiro_numero_digitado > segundo_numero_digitado and segundo_numero_digitado < terceiro_numero_digitado : 
-    segundo_numero = segundo_numero_digitado
-
-elif segundo_numero_digitado > primeiro_numero_digitado and primeiro_numero_digitado < terceiro_numero_digitado :
-    segundo_numero = primeiro_numero_digitado
-
-else: 
-    segundo_numero = terceiro_numero_digitado
 
 
 
@@ -376,9 +368,11 @@ else:
     terceiro_numero = terceiro_numero_digitado
 
 
-
-print(primeiro_numero)    
-print(segundo_numero)    
-print(terceiro_numero)    
+        #verificacao do segundo numero
 
 
+
+
+print(primeiro_numero)
+print(segundo_numero)
+print(terceiro_numero)
