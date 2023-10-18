@@ -218,27 +218,167 @@ elif letra_digitada == 'm' or letra_digitada == 'M':
 else:
     print('Sexo invalido')
 
-"""
+
+18
 
 letra_digitada = input('Digite uma letra: ')
 
-vogal = 'aeiou','AEIOU'
+vogal = 'aeiou AEIOU'
 
-consoante = ' B C D F G J K L M N P Q R S T V W X Y Z ', 'b c d f g j k l m n p q r s t v w x y z'
+consoante = ' B C D F G J K L M N P Q R S T V W X Y Z b c d f g j k l m n p q r s t v w x y z'
 
 
-if letra_digitada in ...:
+if letra_digitada in vogal:
     print(f'A letra {letra_digitada} é uma Vogal')
 
 else:
     print(f'A letra {letra_digitada} é uma consoante')    
 
+19
+
+primeira_nota = int(input('Digite a primeira nota: '))
+segunda_nota = int(input('Digite a segunda nota: '))
+
+media = (primeira_nota + segunda_nota) / 2
+
+
+if media > 6 and media < 9 :
+    print(f'Aprovado, sua media foi {media}')
+
+elif media == 10 :
+        print(f'Aprovado com Distinção, sua media foi {media}')
+
+else:
+    print(f'Reprovado, sua media foi {media}')
 
 
 
+20
+
+primeiro_numero_digitado = int(input('Digite o primeiro numero: '))
+segundo_numero_digitado = int(input('Digite o segundo numero: '))
+terceiro_numero_digitado = int(input('Digite o terceiro numero: '))
+
+if primeiro_numero_digitado > segundo_numero_digitado and primeiro_numero_digitado > terceiro_numero_digitado:
+    print(f'O numero {primeiro_numero_digitado} é maior entre eles!')
+
+elif segundo_numero_digitado > primeiro_numero_digitado and segundo_numero_digitado > terceiro_numero_digitado:    
+        print(f'O numero {segundo_numero_digitado} é maior entre eles!')
+
+elif terceiro_numero_digitado > primeiro_numero_digitado and terceiro_numero_digitado > segundo_numero_digitado:
+    print(f'O numero {terceiro_numero_digitado} é maior entre eles!')
+
+else:
+    print(f'Os tres numeros são iguais!')
+
+
+21
+
+primeiro_numero_digitado = int(input('Digite o primeiro numero: '))
+segundo_numero_digitado = int(input('Digite o segundo numero: '))
+terceiro_numero_digitado = int(input('Digite o terceiro numero: '))
+
+
+maior_numero_digitado = 0
+menor_numero_digitado = 0
+
+if primeiro_numero_digitado > segundo_numero_digitado and primeiro_numero_digitado > terceiro_numero_digitado:
+
+    maior_numero_digitado = primeiro_numero_digitado
+
+elif segundo_numero_digitado > primeiro_numero_digitado and segundo_numero_digitado > terceiro_numero_digitado:
+
+    maior_numero_digitado = segundo_numero_digitado    
+else:
+    maior_numero_digitado = terceiro_numero_digitado
+
+
+if primeiro_numero_digitado < segundo_numero_digitado and primeiro_numero_digitado < terceiro_numero_digitado:
+    menor_numero_digitado = primeiro_numero_digitado
+
+elif segundo_numero_digitado < primeiro_numero_digitado and segundo_numero_digitado < terceiro_numero_digitado:
+    menor_numero_digitado = segundo_numero_digitado
+
+else:
+    menor_numero_digitado = terceiro_numero_digitado
+
+
+print(f'O maior numero é {maior_numero_digitado}')                    
+print(f'O menor numero é {menor_numero_digitado}')              
+
+
+22
+
+primeiro_produto = float(input('Digite o preço do primeiro produto: '))
+segundo_produto = float(input('Digite o preço do segundo produto: '))
+terceiro_produto = float(input('Digite o preço do terceiro produto: '))
 
 
 
+produto_mais_barato = 0
 
+
+
+if primeiro_produto < segundo_produto and primeiro_produto < terceiro_produto:
+    produto_mais_barato = primeiro_produto
+
+elif segundo_produto < primeiro_produto and segundo_produto < terceiro_produto:
+    produto_mais_barato = segundo_produto
+
+else:
+    produto_mais_barato = terceiro_produto
+
+
+print(f'O produto mais barato custa R$ {produto_mais_barato}')            
+
+"""
+
+primeiro_numero_digitado = int(input('Digite o primeiro numero: '))
+segundo_numero_digitado = int(input('Digite o segundo numero: '))
+terceiro_numero_digitado = int(input('Digite o terceiro numero: '))
+
+
+primeiro_numero = 0
+segundo_numero = 0
+terceiro_numero = 0
+
+            #Verificacao do primeiro numero
+
+if primeiro_numero_digitado > segundo_numero_digitado and primeiro_numero_digitado > terceiro_numero_digitado :
+    primeiro_numero = primeiro_numero_digitado
+elif segundo_numero_digitado  > primeiro_numero_digitado and segundo_numero_digitado > terceiro_numero_digitado :
+    primeiro_numero = segundo_numero_digitado
+
+else:
+    primeiro_numero = terceiro_numero_digitado
+
+        #verificacao do segundo numero
+
+if primeiro_numero_digitado > segundo_numero_digitado and segundo_numero_digitado < terceiro_numero_digitado : 
+    segundo_numero = segundo_numero_digitado
+
+elif segundo_numero_digitado > primeiro_numero_digitado and primeiro_numero_digitado < terceiro_numero_digitado :
+    segundo_numero = primeiro_numero_digitado
+
+else: 
+    segundo_numero = terceiro_numero_digitado
+
+
+
+        #verificacao do terceiro numero
+if primeiro_numero_digitado < segundo_numero_digitado and primeiro_numero_digitado < terceiro_numero_digitado:
+    terceiro_numero = primeiro_numero_digitado
+
+elif segundo_numero_digitado < primeiro_numero_digitado and segundo_numero_digitado < terceiro_numero_digitado:
+    terceiro_numero = segundo_numero_digitado
+
+else:
+    terceiro_numero = terceiro_numero_digitado
+
+
+
+print(primeiro_numero)    
+print(segundo_numero)    
+print(terceiro_numero)    
 
 
