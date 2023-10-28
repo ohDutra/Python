@@ -335,44 +335,5 @@ print(f'O produto mais barato custa R$ {produto_mais_barato}')
 
 """
 
-primeiro_numero_digitado = int(input('Digite o primeiro numero: '))
-segundo_numero_digitado = int(input('Digite o segundo numero: '))
-terceiro_numero_digitado = int(input('Digite o terceiro numero: '))
 
 
-primeiro_numero = 0
-segundo_numero = 0
-terceiro_numero = 0
-
-            #Verificacao do primeiro numero
-
-if primeiro_numero_digitado > segundo_numero_digitado and primeiro_numero_digitado > terceiro_numero_digitado :
-    primeiro_numero = primeiro_numero_digitado
-elif segundo_numero_digitado  > primeiro_numero_digitado and segundo_numero_digitado > terceiro_numero_digitado :
-    primeiro_numero = segundo_numero_digitado
-
-else:
-    primeiro_numero = terceiro_numero_digitado
-
-
-
-
-        #verificacao do terceiro numero
-if primeiro_numero_digitado < segundo_numero_digitado and primeiro_numero_digitado < terceiro_numero_digitado:
-    terceiro_numero = primeiro_numero_digitado
-
-elif segundo_numero_digitado < primeiro_numero_digitado and segundo_numero_digitado < terceiro_numero_digitado:
-    terceiro_numero = segundo_numero_digitado
-
-else:
-    terceiro_numero = terceiro_numero_digitado
-
-
-        #verificacao do segundo numero
-
-
-
-
-print(primeiro_numero)
-print(segundo_numero)
-print(terceiro_numero)
