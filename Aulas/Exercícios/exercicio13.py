@@ -24,3 +24,6 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
+numeros_digitados = int(input('Digite os 9 primeiros digitos do cpf: '))
+
+
