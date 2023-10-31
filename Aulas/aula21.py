@@ -2,8 +2,10 @@
 
 """
 
-lista_a = [1, 2, 3]
-lista_b = [4, 5, 6]
-lista_c = lista_a + lista_b
+numeros = range(0 , 50, 2)
+pares = []
 
-print(lista_c)
+for numero in numeros:
+    pares = numero
+    print(pares)
+
