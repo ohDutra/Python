@@ -55,3 +55,9 @@ print(
 )    
 
 '''
+
+
+def saudacao(nome):
+    print(f'Ola, {nome}')
+
+saudacao(input('Digite seu nome: '))    
