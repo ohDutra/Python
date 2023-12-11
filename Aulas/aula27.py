@@ -4,3 +4,7 @@ Operação ternaria (condicional de uma linha)
 """
 
 print('valor' if  5 > 4 else 'menor valor')
+
+
+
+
