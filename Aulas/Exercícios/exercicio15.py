@@ -31,3 +31,9 @@ print(par_impar(2))
 print(par_impar(3))    
 print(par_impar(5))    
 print(par_impar(10))    
+
+
+
+
+
+
