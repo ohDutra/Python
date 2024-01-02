@@ -333,7 +333,76 @@ else:
 
 print(f'O produto mais barato custa R$ {produto_mais_barato}')            
 
+
+
+
+
+23.	As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o programa que calculará os reajustes.
+o	Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+o	salários até R$ 280,00 (incluindo) : aumento de 20%
+o	salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+o	salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+o	salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+o	o salário antes do reajuste;
+o	o percentual de aumento aplicado;
+o	o valor do aumento;
+o	o novo salário, após o aumento.
+
+
+
+
+salario_colaborador = int(input('Digite o salario do colaborador: '))
+nome_colaborador = input('Digite o nome do colaborador: ')
+
+reajuste = 0
+salario_colaborador_reajustado = 0
+
+if salario_colaborador <= 280:
+    reajuste += salario_colaborador * 0.20 
+    salario_colaborador_reajustado = reajuste + salario_colaborador
+    print(f'Colaborador: {nome_colaborador}\nSalario: R$:{salario_colaborador:.2f}\nReajuste de 20% = R$:{reajuste:.2f}\nNovo Salario R${salario_colaborador_reajustado:.2f} '
+    )
+
+elif salario_colaborador >= 280 and salario_colaborador <= 700:
+    reajuste += salario_colaborador * 0.15
+    salario_colaborador_reajustado += reajuste + salario_colaborador
+    print(f'Colaborador: {nome_colaborador}\nSalario: R$:{salario_colaborador:.2f}\nReajuste de 15% = R$:{reajuste:.2f}\nNovo Salario R${salario_colaborador_reajustado:.2f} '
+    )
+
+elif salario_colaborador >= 700 and salario_colaborador <= 1500:
+    reajuste += salario_colaborador * 0.10
+    salario_colaborador_reajustado += reajuste + salario_colaborador
+    print(f'Colaborador: {nome_colaborador}\nSalario: R$:{salario_colaborador:.2f}\nReajuste de 15% = R$:{reajuste:.2f}\nNovo Salario R${salario_colaborador_reajustado:.2f} '
+    )
+else:
+    reajuste += salario_colaborador * 0.05
+    salario_colaborador_reajustado += reajuste + salario_colaborador
+    print(f'Colaborador: {nome_colaborador}\nSalario: R$:{salario_colaborador:.2f}\nReajuste de 5% = R$:{reajuste:.2f}\nNovo Salario R${salario_colaborador_reajustado:.2f} '
+    )    
+
+    
+
+
+
+
+24.	Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que  deposita). O Salário Líquido corresponde ao Salário Bruto menos os descontos. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.
+o	Desconto do IR:
+o	Salário Bruto até 900 (inclusive) - isento
+o	Salário Bruto até 1500 (inclusive) - desconto de 5%
+o	Salário Bruto até 2500 (inclusive) - desconto de 10%
+o	Salário Bruto acima de 2500 - desconto de 20% Imprima na tela as informações, dispostas conforme o exemplo abaixo. No exemplo o valor da hora é 5 e a quantidade de hora é 220.
+o	        Salário Bruto: (5 * 220)        : R$ 1100,00
+o	        (-) IR (5%)                     : R$   55,00  
+o	        (-) INSS ( 10%)                 : R$  110,00
+o	        FGTS (11%)                      : R$  121,00
+o	        Total de descontos              : R$  165,00
+            Salário Liquido                 : R$  935,00
+
 """
+
+
+
+
 
 
 
