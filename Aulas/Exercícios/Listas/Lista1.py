@@ -399,7 +399,80 @@ o	        Total de descontos              : R$  165,00
             Salário Liquido                 : R$  935,00
 
 """
+valor_horas = float(input('Digite o valor da hora trabalhada: '))
 
+horas_trabalhadas_mes = int(input('Digite a quantidade de horas trabalhadas: '))
+
+
+
+salario_bruto = valor_horas * horas_trabalhadas_mes
+
+
+salario_liquido = 0
+desconto_inss = 0
+desconto_sindical = 0
+desconto_IR = 0
+pagamento_fgts = 0
+
+
+
+if salario_bruto <= 900:
+    desconto_inss = salario_bruto * 0.10 
+    desconto_sindical = salario_bruto * 0.03
+    pagamento_fgts = salario_bruto * 0.11
+    salario_liquido = salario_bruto - desconto_inss - desconto_sindical
+
+    print(f'Salario Bruto: ({valor_horas} * {horas_trabalhadas_mes}) : R$ {salario_bruto:.2f}\n\
+          (-) INSS (10%) : R$ {desconto_inss:.2f}\n\
+          (-) Desconto Sindicato (3%) : R$ {desconto_sindical:.2f}\n\
+          FGTS (11%) : R$ {pagamento_fgts:.2f}\n\
+          Total de descontos : R$ {desconto_inss + desconto_sindical:.2f}\n\
+          Salario Liquido : R$ {salario_liquido:.2f}')
+
+elif salario_bruto >= 901 and salario_bruto <= 1500:
+    desconto_IR = salario_bruto * 0.05 
+    desconto_inss = salario_bruto * 0.10 
+    desconto_sindical = salario_bruto * 0.03
+    pagamento_fgts = salario_bruto * 0.11
+    salario_liquido = salario_bruto - desconto_inss - desconto_sindical - desconto_IR
+
+    print(f'Salario Bruto: ({valor_horas} * {horas_trabalhadas_mes}) : R$ {salario_bruto:.2f}\n\
+          (-) IR (5%) : R$ {desconto_IR:.2f}\n\
+          (-) INSS (10%) : R$ {desconto_inss:.2f}\n\
+          (-) Desconto Sindiocato (3%) : R$ {desconto_sindical:.2f}\n\
+          FGTS (11%) : R$ {pagamento_fgts:.2f}\n\
+          Total de descontos : R$ {desconto_inss + desconto_IR + desconto_sindical}\n\
+          Salario Liquido : R$ {salario_liquido:.2f}')
+    
+
+elif salario_bruto >= 1501 and salario_bruto <= 2500:
+    desconto_IR = salario_bruto * 0.10
+    desconto_inss = salario_bruto * 0.10
+    desconto_sindical = salario_bruto * 0.03
+    pagamento_fgts = salario_bruto * 0.11
+    salario_liquido = salario_bruto - desconto_inss - desconto_IR - desconto_sindical
+
+    print(f'Salario Brutro: ({valor_horas} * {horas_trabalhadas_mes}) : R$ {salario_bruto:.2f}\n\
+          (-) IR (10%) : R$ {desconto_IR:.2f}\n\
+          (-) INSS (10%) : R$ {desconto_inss:.2f}\n\
+          (-) Desconto Sindicato (3%) : R$ {desconto_sindical:.2f}\n\
+          FGTS (11%) : R$ {pagamento_fgts:.2f}\n\
+          Total de descontos : R$ {desconto_inss + desconto_IR + desconto_sindical}\n\
+          Salario Liquido : R$ {salario_liquido:.2f}')    
+else:
+    desconto_IR = salario_bruto * 0.20
+    desconto_inss = salario_bruto * 0.10
+    desconto_sindical = salario_bruto * 0.03
+    pagamento_fgts = salario_bruto * 0.11
+    salario_liquido = salario_bruto - desconto_inss - desconto_IR - desconto_sindical
+
+    print(f'Salario Bruto: ({valor_horas} * {horas_trabalhadas_mes}) : R$ {salario_bruto}\n\
+          (-) IR (20%) : R$ {desconto_IR:.2f}\n\
+          (-) INSS (10%) : R$ {desconto_inss:.2f}\n\
+          (-) Desconto Sindicato (3%) : R$ {desconto_sindical}\n\
+          FGTS (11%)  : R$ {pagamento_fgts:.2f}\n\
+          Total de descontos : R$ {desconto_sindical + desconto_inss + desconto_IR}\n\
+          Salario Liquido : R$ {salario_liquido:.2f}')
 
 
 
