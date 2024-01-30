@@ -54,24 +54,12 @@ print(primeiro_numero)
 
 
 
-x, y, *resto = 1, 2, 3, 4, 5, 6  
-
-def soma(*args):
-    contador = 0
-    for numero in args:
-        contador += numero
-    return contador
-
-conta = soma(1, 2, 3, 5, 6)        
-print(conta)
-conta2 = soma(7, 8, 9, 10, 11)        
-print(conta2)
-conta3 = soma(12, 13, 14, 15)        
-print(conta3)
+def soma(a , b, c):
+    
+    print(f'{a=} {b=} {c=}', '|', 'a + b + c =', a+b+c)
 
 
-
-
+soma(b= 10, a= 15, c= 20)    
 
 
 
