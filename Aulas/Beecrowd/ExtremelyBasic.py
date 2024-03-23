@@ -1,6 +1,14 @@
-a =int(input())
-b =int(input())
+# a =int(input())
+# b =int(input())
 
-x = a + b
+# x = a + b
 
-print("x =", x)
+# print("x =", x)
+
+def novoValor(lista1):
+    lista1 = [i]
+
+    for i in range(5):
+        lista1.append(input("Digite um numero: "))
+
+    
